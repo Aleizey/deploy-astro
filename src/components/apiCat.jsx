@@ -1,5 +1,5 @@
 export const datos = [];
-const url = 'https://api.thecatapi.com/v1/images/search?limit=5';
+const url = 'https://www.freetestapi.com/api/v1/cats?limit=5';
 
 const callApi = async () => {
     try {
@@ -16,7 +16,9 @@ const callApi = async () => {
         <div>
             {datos.map((item) => (
                 <div key={item.id}>
-                    <img src={item.url} alt="" width={item.width} height={item.height} />
+                    <p>{item.Persian}</p>
+                    <p>{item.origin}</p>
+                    <img src={item.image} alt="" width={100} height={100} />
                 </div>
             ))}
         </div>
