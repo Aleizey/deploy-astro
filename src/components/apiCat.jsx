@@ -16,7 +16,7 @@ const callApi = async () => {
         <div>
             {datos.map((item) => (
                 <div key={item.id}>
-                    <p>{item.Persian}</p>
+                    <h1>{item.name}</h1>
                     <p>{item.origin}</p>
                     <img src={item.image} alt="" width={100} height={100} />
                 </div>
